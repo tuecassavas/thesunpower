@@ -2,7 +2,6 @@ import jwt, { JwtPayload } from 'jsonwebtoken';
 import process from 'process';
 import { LogError } from 'shared/core/error/logError';
 import { ErrorVars } from 'shared/core/error/errorVars';
-import { sDeleteUser } from 'shared/core/services/User/sDeleteUser';
 import { responseError, responseSuccess } from 'shared/core/context';
 import { intRegex } from 'shared/helpers/regex';
 
@@ -59,7 +58,7 @@ export const getSlackMessage = (error: any) => {
         type: 'section',
         text: {
           type: 'mrkdwn',
-          text: 'Hey Tue 👋. There is very important notice, codetheoyeucau.com has extremely serious error.'
+          text: 'Hey Tue 👋. There is very important notice, thesunpower.com has extremely serious error.'
         }
       },
       {
