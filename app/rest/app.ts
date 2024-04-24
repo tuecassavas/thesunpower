@@ -19,12 +19,21 @@ import { requestOTPHandler } from 'rest/controler/Auth/requestOTPHandler';
 import { putProfileAvatarHandler } from 'rest/controler/User/putProfileAvatarHandler';
 import { singleImage } from 'rest/middleware/fileUpload';
 
+const path = require('path');
 const app = express();
+
+app.use(express.static(path.join( './app/rest/public')));
+app.set('views','./app/rest/views');
+app.set('view engine','ejs');
 
 app.set('trust proxy', 'loopback');
 app.all('*', cors);
 app.all('*', apiLimiter);
 app.use(bodyParser.json({ limit: '3mb' }));
+
+app.get('/', (req: express.Request, res: express.Response) => {
+  res.render('index');
+});
 
 app.get('/v1/health', (req: express.Request, res: express.Response) => {
   res.send({ smg: 'lives' });

@@ -7,7 +7,7 @@
   "bin": "build/index.js",
   "scripts": {
     "test": "node -e  \"process.stdout.write('\\\\x1Bc')\" && NODE_ENV=test && jest --detectOpenHandles --coverage --forceExit",
-    "dev": "export NODE_ENV=dev && ts-node-dev -r tsconfig-paths/register --respawn --transpile-only app/rest/index.ts",
+    "dev": "set NODE_ENV=dev && ts-node-dev -r tsconfig-paths/register --respawn --transpile-only app/rest/index.ts",
     "build": "export NODE_ENV=production && tsc -p tsconfig.json && tscpaths -p tsconfig.json -s ./ -o ./build",
     "prettier": "prettier . --write"
   },
@@ -52,6 +52,7 @@
     "bcrypt": "^5.1.0",
     "bson": "^5.2.0",
     "date-fns": "^2.30.0",
+    "ejs": "^3.1.10",
     "express": "^4.17.2",
     "express-async-handler": "^1.2.0",
     "express-rate-limit": "^6.6.0",
