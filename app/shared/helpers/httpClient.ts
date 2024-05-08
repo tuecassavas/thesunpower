@@ -77,11 +77,7 @@ const doHttp = (args: {
         if (err.name === 'AbortError') {
           return;
         }
-        // if ((err as AxiosError).response?.data) {
-        //   reject(new Error(JSON.stringify((err as AxiosError).response?.data)));
-        // } else {
         reject(err);
-        //}
       });
   });
 };
