@@ -22,6 +22,12 @@ app.use(bodyParser.json({ limit: '3mb' }));
 app.get('/', (req: express.Request, res: express.Response) => {
   res.render('index');
 });
+app.get('/products', (req: express.Request, res: express.Response) => {
+  res.render('products');
+});
+app.get('/news', (req: express.Request, res: express.Response) => {
+  res.render('news');
+});
 
 app.get('/v1/health', (req: express.Request, res: express.Response) => {
   res.send({ smg: 'lives' });
