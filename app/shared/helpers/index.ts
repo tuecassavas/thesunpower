@@ -58,7 +58,7 @@ export const getSlackMessage = (error: any) => {
         type: 'section',
         text: {
           type: 'mrkdwn',
-          text: 'Hey Tue 👋. There is very important notice, thesunpower.com has extremely serious error.'
+          text: 'Hey Tue 👋. There is very important notice, thegreenpower.com has extremely serious error.'
         }
       },
       {

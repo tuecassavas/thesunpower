@@ -1,9 +1,9 @@
 #!/bin/bash
 
 LOCAL_DIR='build/'
-ADDRESS="3.0.202.33"
-USER="ubuntu"
-TARGET_DIR='www/api.codetheoyeucau.com'
+ADDRESS="103.200.20.74"
+USER="root"
+TARGET_DIR='www/thegreenpower.vn'
 
 GREEN="\033[0;32m"
 RED="\033[0;31m"
@@ -24,7 +24,7 @@ rsync -zaP -a  ${LOCAL_DIR} ${USER}@${ADDRESS}:${TARGET_DIR}
 rsync -zaP  package.json ${USER}@${ADDRESS}:${TARGET_DIR}
 
 ssh ${USER}@${ADDRESS} 'bash -s' <<'ENDSSH'
-  cd www/api.codetheoyeucau.com
+  cd www/thegreenpower.vn
   echo -e '\033[0;32mInstalling dependencies... \033[0m'
   npm install
 

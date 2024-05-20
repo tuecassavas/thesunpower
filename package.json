@@ -7,8 +7,8 @@
   "bin": "build/index.js",
   "scripts": {
     "test": "node -e  \"process.stdout.write('\\\\x1Bc')\" && NODE_ENV=test && jest --detectOpenHandles --coverage --forceExit",
-    "dev": "set NODE_ENV=dev && ts-node-dev -r tsconfig-paths/register --respawn --transpile-only app/rest/index.ts",
-    "build": "export NODE_ENV=production && tsc -p tsconfig.json && tscpaths -p tsconfig.json -s ./ -o ./build",
+    "dev": "export NODE_ENV=dev && ts-node-dev -r tsconfig-paths/register --respawn --transpile-only app/rest/index.ts",
+    "build": "export NODE_ENV=production && tsc -p tsconfig.json && tscpaths -p tsconfig.json -s ./ -o ./build && cp -R app/rest/views build/app/rest/views && cp -R app/rest/public build/app/rest/public",
     "prettier": "prettier . --write"
   },
   "keywords": [],
@@ -58,12 +58,10 @@
     "express-rate-limit": "^6.6.0",
     "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.21",
-    "moment": "^2.29.4",
     "mongodb": "^4.9.0",
     "multer": "^1.4.5-lts.1",
     "node-fetch": "2",
     "sinon": "^15.2.0",
-    "twilio": "^4.9.0",
     "uuid": "^9.0.0",
     "winston": "^3.8.2",
     "winston-slack-webhook-transport": "^2.3.2"

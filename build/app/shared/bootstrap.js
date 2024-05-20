@@ -11,6 +11,9 @@ if (process.env.NODE_ENV) {
 if (process.env.NODE_ENV === 'production') {
     path = '.env';
 }
+if (!process.env.NODE_ENV) {
+    path = '.dev.env';
+}
 dotenv_1.default.config({
     path
 });

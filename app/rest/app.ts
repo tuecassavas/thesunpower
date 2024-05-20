@@ -9,15 +9,15 @@ import { apiLimiter } from 'rest/config/rateLimit';
 import path from 'path';
 
 const app = express();
-
-app.use(express.static(path.join( './app/rest/public')));
-app.set('views','./app/rest/views');
-app.set('view engine','ejs');
-
 app.set('trust proxy', 'loopback');
 app.all('*', cors);
 app.all('*', apiLimiter);
 app.use(bodyParser.json({ limit: '3mb' }));
+
+app.use(express.static(path.join( './app/rest/public')));
+app.set("views", path.join(__dirname, "views"));
+app.set('view engine','ejs');
+
 
 app.get('/', (req: express.Request, res: express.Response) => {
   res.render('index');

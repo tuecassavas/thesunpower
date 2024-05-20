@@ -11,7 +11,7 @@ const getCurrentLogFile = () => {
     const date = new Date();
     const year = date.getFullYear();
     const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    return `logs/thesunpower_service_log_${year}_${month}.json`;
+    return `logs/thegreenpower_service_log_${year}_${month}.json`;
 };
 const config = {
     test: {
