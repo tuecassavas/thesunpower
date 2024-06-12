@@ -1,100 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Sun Power - Products</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="/assets/style.css" rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- axios  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+      integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-<body>
+    <link href="/assets/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
     <div id="root">
-        <%- include('header'); -%>
-            <section id="products">
-                <div class="products flex justify-center">
-                    <div class="products-search">
-                        <div class="content-line-height">
-                            <div class="products-content-title">Sản phẩm năng lượng mặt trời</div>
-                        </div>
-                        <div style="margin: 2rem;"></div>
-                        <div class="products-search-content content-line-height">
-                            <div class="products-content">
-                                <div class="products-content-item">
-                                    <p>Vùng</p>
-                                    <div class="products-content-item-option">
-                                        <select name="typeSystem" id="TypeSystem">
-                                            <option value="system1">Bán tải</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="products-content-item">
-                                    <p>Loại tiêu thụ điện</p>
-                                    <div class="products-content-item-option">
-                                        <select name="area" id="Area">
-                                            <option value="area1">TPHCM</option>
-                                            <option value="area2">Đồng Nai</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="products-content-item">
-                                    <p>Số kWh</p>
-                                    <div class="products-content-item-option">
-                                        <select name="Price" id="Price">
-                                            <option value="price1">1 kWh</option>
-                                            <option value="price2">10 kWh</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="products-content-item">
-                                    <p>Hãng</p>
-                                    <div class="products-content-item-option">
-                                        <select name="Brand" id="Brand">
-                                            <option value="Brand1">Sony</option>
-                                            <option value="Brand2">Toshiba</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="search">
-                                <div class="form-input">
-                                    <input type="text" placeholder="Nhập tìm kiếm">
-                                    <button>
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex justify-start content-line-height">
-                            <button id="BtnApplyProduct">Áp dụng</button>
-                        </div>
-                    </div>
+      <%- include('header'); -%>
+      <section id="products">
+        <div class="products flex justify-center">
+          <div class="products-search" style="max-width: 1366px; margin: auto">
+            <div class="content-line-height">
+              <div class="products-content-title">
+                Sản phẩm năng lượng mặt trời
+              </div>
+            </div>
+            <div style="margin: 2rem"></div>
+            <div class="products-search-content content-line-height">
+              <div class="products-content">
+                <div class="products-content-item">
+                  <p>Vùng</p>
+                  <div class="products-content-item-option">
+                    <select name="typeSystem" id="TypeSystem">
+                      <option value="system1">Bán tải</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="products-show">
-                    <!-- <div class="products-show-tool">
-                        <div class="products-show-quantity">
-                            <span>0</span>
-                        </div>
-                        <div class="products-show-tool-icon">
-                            <button id="BtnProductShowTool" onclick="changeModeShow()">
-                                <i id="IconModeShow" class="fa-solid fa-grip-vertical"></i>
-                            </button>
-                        </div>
-                    </div>                     -->
-                    <div class="product-shown" id="productShown">
-                    </div>
-                    <div style="text-align: center; margin: 4rem;">
-                        <button id="BtnExpandProduct">Xem thêm</button>
-                    </div>
+                <div class="products-content-item">
+                  <p>Loại tiêu thụ điện</p>
+                  <div class="products-content-item-option">
+                    <select name="area" id="Area">
+                      <option value="area1">TPHCM</option>
+                      <option value="area2">Đồng Nai</option>
+                    </select>
+                  </div>
                 </div>
-            </section>
-            <%- include('footer'); -%>
+                <div class="products-content-item">
+                  <p>Số kWh</p>
+                  <div class="products-content-item-option">
+                    <select name="Price" id="Price">
+                      <option value="price1">1 kWh</option>
+                      <option value="price2">10 kWh</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="products-content-item">
+                  <p>Hãng</p>
+                  <div class="products-content-item-option">
+                    <select name="Brand" id="Brand">
+                      <option value="Brand1">Sony</option>
+                      <option value="Brand2">Toshiba</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search">
+                <div class="form-input">
+                  <input type="text" placeholder="Nhập tìm kiếm" />
+                  <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-start content-line-height">
+              <button id="BtnApplyProduct">Áp dụng</button>
+            </div>
+          </div>
+        </div>
+        <!-- <div style="max-width: 1366px; margin: auto" class="flex justify-center"> -->
+          <div class="products-show" >
+            <div class="product-shown" id="productShown" style="max-width: 1366px"></div>
+            <div style="text-align: center; margin: 4rem">
+              <button id="BtnExpandProduct">Xem thêm</button>
+            </div>
+          </div>
+        <!-- </div> -->
+      </section>
+      <%- include('footer'); -%>
     </div>
     <script src="/assets/main.js"></script>
     <script src="/assets/products.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,108 +1,111 @@
-const arrayProducts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-const dataProduct = {
-    image: '/assets/img/image4.png',
-    title: 'Inverter hoài lưới 1 pha Sofar 6KTLM-G3',
-    description1: 'Công suất đầu vào tối đa',
-    value1: '9000Wp',
-    description2: 'Hiệu suất',
-    value2: '98,4%',
-    description3: 'Số ngõ MPPT',
-    value3: '2',
-    description4: 'Kích thước',
-    value4: '349x344x164 mm',
-    description5: 'Cân nặng',
-    value5: '10kg',
-    description6: 'IP65',
-    value6: '',
-    description7: 'Bảo hành',
-    value7: '5 năm',
-    description8: 'Solar E',
-    value8: 'Website',
-    description9: 'Giva Solar',
-    value9: 'Website',
-    description10: 'ECO Solar',
-    value10: 'Website',
-    price: '10 - 15.000.000VND'
+let productData = [];
+async function onloadData() {
+    try {
+        let response = await axios({
+            url: '/assets/data/productData.json',
+            method: 'GET',
+        });
+        // console.log(response);
+        productData = response.data.data;
+        // console.log(productData);
+        loadProduct(productData);
+        showButtonExpandProduct()
+    } catch (error) {
+        console.log(error);
+    };
 };
 
 let content = (data) => {
+    // console.log(data);
     let totalDivCard = '';
-    for (let i in arrayProducts) {
+    for (let i of data) {
+        let divCompany = '';
+        for (let company of i.companies) {
+            divCompany = divCompany + `<div class="flex justify-between">
+                                <span class="products-detail-information-content">${company.name}</span>
+                                <a href="${company.website}"><span class="products-detail-information-value">Website</span></a>
+                            </div>`
+        };
         totalDivCard = totalDivCard + `<div class="product-card">
-        <div id="ProductDetailInfomation${i}" class="products-detail-information" onmouseover="hoverProductCard(${i})" onmouseout="moveProductCard(${i})">
+        <div id="ProductDetailInfomation${i.id}" class="products-detail-information" onmouseover="hoverProductCard(${i.id})" onmouseout="moveProductCard(${i.id})">
                             <div class="products-detail-information-form">
                                 <div class="products-detail-information-title">
-                                    <span>Inverter hoài lưới 1 pha Sofar 6KTLM-G3</span>
+                                    <span>${i.description}</span>
                                 </div>
                                 <div class="products-detail-information-body">
                                 <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description1}</span>
-                                <span class="products-detail-information-value">${data.value1}</span>
+                                <span class="products-detail-information-content">Công suất đầu vào tối đa</span>
+                                <span class="products-detail-information-value">${i.information.maxInputCapacity}</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description2}</span>
-                                <span class="products-detail-information-value">${data.value2}</span>
+                                <span class="products-detail-information-content">Hiệu suất</span>
+                                <span class="products-detail-information-value">${i.information.performance}</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description3}</span>
-                                <span class="products-detail-information-value">${data.value3}</span>
+                                <span class="products-detail-information-content">Loại pin lưu trữ </span>
+                                <span class="products-detail-information-value">${i.information.storageBattery}</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description4}</span>
-                                <span class="products-detail-information-value">${data.value4}</span>
+                                <span class="products-detail-information-content">Dải điện áp pin lưu trữ</span>
+                                <span class="products-detail-information-value">${i.information.voltage}</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description5}</span>
-                                <span class="products-detail-information-value">${data.value5}</span>
+                                <span class="products-detail-information-content">Dòng sạc tối đa</span>
+                                <span class="products-detail-information-value">${i.information.maxCharging}</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description6}</span>
-                                <span class="products-detail-information-value">${data.value6}</span>
+                                <span class="products-detail-information-content">Dòng xả tối đa</span>
+                                <span class="products-detail-information-value">${i.information.maxDischarge}</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description7}</span>
-                                <span class="products-detail-information-value">${data.value7}</span>
+                                <span class="products-detail-information-content">Số ngõ MPPT</span>
+                                <span class="products-detail-information-value">${i.information.portMPPT}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="products-detail-information-content">Kích thước</span>
+                                <span class="products-detail-information-value">${i.information.size}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="products-detail-information-content">Cân nặng</span>
+                                <span class="products-detail-information-value">${i.information.weight}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="products-detail-information-content">IP</span>
+                                <span class="products-detail-information-value">${i.information.ip}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="products-detail-information-content">Bảo hành</span>
+                                <span class="products-detail-information-value">${i.information.warranty}</span>
                             </div>
                                 </div>
                                 <hr>
                                 <div class="products-detail-information-available-company">
-                                <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description8}</span>
-                                <a href="https://solare.vn/products/inverter-hoa-luoi-sofar-6ktlm-g3"><span class="products-detail-information-value">${data.value8}</span></a>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description9}</span>
-                                <a href="https://givasolar.com/san-pham/inverter-hoa-luoi-1-pha-sofar-6ktlm-g3/"><span class="products-detail-information-value">${data.value9}</span></a>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="products-detail-information-content">${data.description10}</span>
-                                <a href="https://ecosolar.vn/inverter-hoa-luoi/inverter-on-grid/sofar-solar/"><span class="products-detail-information-value">${data.value10}</span></a>
-                            </div>
+                            ${divCompany}
                                 </div>
                             </div>
                         </div>
         <div>
         <div class="product-card-image">
-            <img src="${data.image}" alt="">
+            <img src="${i.image}" alt="">
         </div>
         <div class="product-card-body">
-            <div class="card-title" onmouseover="hoverProductCard(${i})" onmouseout="moveProductCard(${i})">
-                <span>${data.title}</span>
+            <div class="card-title" onmouseover="hoverProductCard(${i.id})" onmouseout="moveProductCard(${i.id})">
+                <span>${i.description}</span>
             </div>
             <div class="card-decscription">
                 <div class="flex justify-between">
-                    <span class="card-decscription-content">${data.description1}</span>
-                    <span class="card-decscription-value">${data.value1}</span>
+                    <span class="card-decscription-content">Công suất đầu vào tối đa</span>
+                    <span class="card-decscription-value">${i.information.maxInputCapacity}</span>
                 </div>
                 <div class="flex justify-between">
-                    <span class="card-decscription-content">${data.description2}</span>
-                    <span class="card-decscription-value">${data.value2}</span>
+                    <span class="card-decscription-content">Hiệu suất</span>
+                    <span class="card-decscription-value">${i.information.performance}</span>
                 </div>
             </div>
             <hr>
                 <div class="card-product-price">
                     <span class="card-product-price-content">Giá dao động</span>
-                    <span class="card-product-price-value">${data.price}</span>
+                    <span class="card-product-price-value">${i.price}</span>
                 </div>
                 <div id="BtnProduct">
                     <button>Tư vấn sản phẩm</button>
@@ -113,21 +116,6 @@ let content = (data) => {
     };
     return totalDivCard
 };
-
-
-// const changeModeShow = () => {
-//     const element = document.getElementById('productShown');
-//     const button = document.querySelector('#BtnProductShowTool');
-//     // icon.className = icon.className ? 'fa-solid fa-grip-vertical' : 'fa-solid fa-grip-lines';
-//     if (element.style.gridTemplateColumns == '') {
-//         console.log(element.style);
-//         element.style.gridTemplateColumns = 'auto'
-//     } else {
-//         console.log(element.style);
-//         button.classList.add = 'active';
-//         element.style.gridTemplateColumns = 'auto auto'
-//     }
-// };
 
 let mediaScreen = window.matchMedia("(max-width: 450px)");
 
@@ -150,12 +138,20 @@ const moveProductCard = (id) => {
     elementVisible.className = 'products-detail-information'
 };
 
+const showButtonExpandProduct = () => {
+    const element = document.getElementById('BtnExpandProduct');
+    if (productData.length <= 8) {
+        element.style.display = 'none'
+    }
+};
+
 // console.log(content());
-loadProduct = () => {
-    document.querySelector('#productShown').innerHTML = content(dataProduct)
+loadProduct = (data) => {
+    document.querySelector('#productShown').innerHTML = content(data)
 };
 
 window.onload = () => {
     activePage();
-    loadProduct();
+    onloadData();
+    // loadProduct();
 }
