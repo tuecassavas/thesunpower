@@ -1,3 +1,26 @@
+let companiesData = [];
+const onloadCompaniesData = async () => {
+    try {
+        let response = await axios({
+            url: '/assets/data/companyData.json',
+            method: 'GET',
+        });
+        // console.log(response.data);
+        companiesData = response.data;
+        loadContent(companiesData)
+    } catch (error) {
+        console.log(error);
+    };
+};
+
+const loadContent = (data) => {
+    let optionElement = '';
+    for (let i of data) {
+     optionElement = optionElement + `<option value="${i.code}">${i.name}</option>`
+    };
+    return document.getElementById('Area').innerHTML = optionElement
+};
+
 //header: active title
 const activeTitle = (pathname, pageId) => {
     let element = document.querySelector(`#${pageId}`);
@@ -22,7 +45,8 @@ const collapseNavbar = () => {
 
 window.onload = () => {
     activePage();
-    collapseNavbar()
+    collapseNavbar();
+    onloadCompaniesData()
 };
 
 // load input when radio is checked
@@ -69,3 +93,4 @@ const collapseDemand = () => {
 const collapseHabit = () => {
     collapseExpend('electricUsageHabit', 'iconAngleUpHabit', 'btnCollapseHabit')
 };
+

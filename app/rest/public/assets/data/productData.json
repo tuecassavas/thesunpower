@@ -2,11 +2,11 @@
   "data": [
     {
       "id": "1",
-      "type": "HOÀ LƯỚI BÁM TẢI",
+      "type": "Hoà lưới bám tải",
       "image": "/assets/img/image4.png",
       "description": "Inverter hoà lưới 1 pha Sofar 6KTLM-G3",
       "information": {
-        "maxInputCapacity": "9000 Wp",
+        "maxInputCapacity": "9000Wp",
         "performance": "98.4%",
         "storageBattery": "",
         "voltage": "",
@@ -44,11 +44,11 @@
     },
     {
       "id": "2",
-      "type": "Hoà lưới bám tải có lưu trữ ( Hybrid )",
-      "image": "",
-      "description": "Inverter hybrid Deye 6kw 1 pha / SUN-6K-SG04LP1-EU",
+      "type": "Hoà lưới bám tải + lưu trữ",
+      "image": "/assets/img/inverter-hybrid.png",
+      "description": "Inverter Hybrid Deye 6kw 1 pha / SUN-6K-SG04LP1-EU",
       "information": {
-        "maxInputCapacity": "8000 Wp",
+        "maxInputCapacity": "8000Wp",
         "performance": "97.6%",
         "storageBattery": "Axít chì - lithium",
         "voltage": "40~60V",
@@ -81,53 +81,11 @@
     },
     {
       "id": "3",
-      "type": "ĐỘC LẬP",
+      "type": "Độc lập",
       "image": "",
-      "description": "---",
+      "description": "Inverter hybrid Deye 6kw 1 pha ",
       "information": {
-        "maxInputCapacity": "8000 Wp",
-        "performance": "97.6%",
-        "storageBattery": "Axít chì - lithium",
-        "voltage": "40~60V",
-        "maxCharging": "135",
-        "maxDischarge": "135",
-        "portMPPT": "2",
-        "size": "330x433x238 mm",
-        "weight": "15.1kg",
-        "ip": "65",
-        "warranty": "5 năm"
-      },
-      "price":"10 - 15.000.000 VND",
-      "companies": [
-        {
-          "id": "1",
-          "name": "Solar E",
-          "website": "https://solare.vn/"
-        },
-        {
-          "id": "2",
-          "name": "Giva solar",
-          "website": "https://givasolar.com/"
-        },
-        {
-          "id": "3",
-          "name": "ECO solar",
-          "website": "https://ecosolar.vn/"
-        },
-        {
-          "id": "4",
-          "name": "Đan Khuê solar",
-          "website": "https://dankhuesolar.com/"
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "type": "ĐỘC LẬP",
-      "image": "",
-      "description": "---",
-      "information": {
-        "maxInputCapacity": "8000 Wp",
+        "maxInputCapacity": "8000Wp",
         "performance": "97.6%",
         "storageBattery": "Axít chì - lithium",
         "voltage": "40~60V",

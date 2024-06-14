@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <div id="root">
+    <div id="root" onload="onloadData()">
       <%- include('header'); -%>
       <section id="products">
         <div class="products flex justify-center">
@@ -39,17 +39,21 @@
                 <div class="products-content-item">
                   <p>Vùng</p>
                   <div class="products-content-item-option">
-                    <select name="typeSystem" id="TypeSystem">
-                      <option value="system1">Bán tải</option>
+                    <select name="area" id="Area">
+                      <option value="area1">TPHCM</option>
+                      <option value="area2">Đồng Nai</option>
                     </select>
                   </div>
                 </div>
                 <div class="products-content-item">
                   <p>Loại tiêu thụ điện</p>
                   <div class="products-content-item-option">
-                    <select name="area" id="Area">
-                      <option value="area1">TPHCM</option>
-                      <option value="area2">Đồng Nai</option>
+                    <select name="typeSystem" id="TypeSystem">
+                      <option value="system1">Bán tải</option>
+                      <option value="system2">
+                        Hoà lưới bám tải + lưu trữ
+                      </option>
+                      <option value="system3">Độc lập</option>
                     </select>
                   </div>
                 </div>
@@ -86,14 +90,16 @@
             </div>
           </div>
         </div>
-        <!-- <div style="max-width: 1366px; margin: auto" class="flex justify-center"> -->
-          <div class="products-show" >
-            <div class="product-shown" id="productShown" style="max-width: 1366px"></div>
-            <div style="text-align: center; margin: 4rem">
-              <button id="BtnExpandProduct">Xem thêm</button>
-            </div>
+        <div class="products-show">
+          <div
+            class="product-shown"
+            id="productShown"
+            style="max-width: 1366px"
+          ></div>
+          <div style="text-align: center; margin: 4rem">
+            <button id="BtnExpandProduct">Xem thêm</button>
           </div>
-        <!-- </div> -->
+        </div>
       </section>
       <%- include('footer'); -%>
     </div>
