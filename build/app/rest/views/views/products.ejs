@@ -9,7 +9,6 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="/assets/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/products.css">
 </head>
 
 <body>
@@ -17,12 +16,12 @@
         <%- include('header'); -%>
             <section id="products">
                 <div class="products flex justify-center">
-                    <div style="width: 90%;">
+                    <div class="products-search">
                         <div class="content-line-height">
                             <div class="products-content-title">Sản phẩm năng lượng mặt trời</div>
                         </div>
                         <div style="margin: 2rem;"></div>
-                        <div class="flex justify-between content-line-height">
+                        <div class="products-search-content content-line-height">
                             <div class="products-content">
                                 <div class="products-content-item">
                                     <p>Vùng</p>
@@ -75,7 +74,17 @@
                     </div>
                 </div>
                 <div class="products-show">
-                    <div class="flex justify-between" style="width: 93%;" id="productShown">
+                    <!-- <div class="products-show-tool">
+                        <div class="products-show-quantity">
+                            <span>0</span>
+                        </div>
+                        <div class="products-show-tool-icon">
+                            <button id="BtnProductShowTool" onclick="changeModeShow()">
+                                <i id="IconModeShow" class="fa-solid fa-grip-vertical"></i>
+                            </button>
+                        </div>
+                    </div>                     -->
+                    <div class="product-shown" id="productShown">
                     </div>
                     <div style="text-align: center; margin: 4rem;">
                         <button id="BtnExpandProduct">Xem thêm</button>
@@ -84,6 +93,7 @@
             </section>
             <%- include('footer'); -%>
     </div>
+    <script src="/assets/main.js"></script>
     <script src="/assets/products.js"></script>
 </body>
 

@@ -1,5 +1,5 @@
-<header id="header" class="header fixed flex justify-center">
-    <div class="w-10/12">
+<header id="header" class="header flex justify-center">
+    <div class="window-active w-10/12">
         <div class="flex justify-between">
             <div class="header-brand">
                 <a class="font-bold" href="">thegreenpower</a>
@@ -10,5 +10,20 @@
                 <li><a id="NewsPageActive" href="/news">Tin tức</a></li>
             </ul>
         </div>
+    </div>
+    <div class="mobile-active">
+        <div class="flex justify-between w-10/12">
+            <div class="header-brand">
+                <a class="font-bold" href="">thegreenpower</a>
+            </div>
+            <button class="btn-bars" onclick="collapseNavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <ul class="" id="navbar">
+            <li><a id="HomePageActive" href="/">Trang chủ</a></li>
+            <li><a id="ProductPageActive" href="/products">Sản phẩm</a></li>
+            <li><a id="NewsPageActive" href="/news">Tin tức</a></li>
+        </ul>
     </div>
 </header>
