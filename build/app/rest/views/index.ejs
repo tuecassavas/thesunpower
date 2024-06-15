@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- axios  -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+    integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
     <link href="/assets/style.css" rel="stylesheet">
     <meta name="description"
         content="The Green Power cung cấp công cụ hỗ trợ tính công suất, loại, giá lắp đặt hệ thống điện mặt trời hoà lưới và lưu trữ dựa vào hoá đơn tiền điện. Cập nhật liên tục tin tức về điện mặt trời, chính sách điện mặt trời mới và các đơn vị lắp đặt điện mặt trời uy tín trên toàn quốc">
@@ -38,7 +45,7 @@
         position: absolute;
         top: -0.35rem;
         "></div>
-                <div class="detail-content">
+                <div class="detail-content" style="max-width: 1366px; margin: auto">
                     <div class="detail-content-container">
                         <div class="detail-content-card">
                             <div class="detail-content-card-items">
@@ -111,7 +118,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="detail-content-card-body-items">
+                                    <div class="detail-content-card-body-items" >
                                         <h1>
                                             <i class="fa-solid fa-play"></i>
                                             Loại mạng điện (*)
@@ -373,6 +380,8 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                         <div class="demand-product-content-item-option">
                                                             <select name="typeSystem" id="TypeSystem">
                                                                 <option value="system1">Bán tải</option>
+                                                                <option value="system2">Hoà lưới bám tải + lưu trữ</option>
+                                                                <option value="system3">Độc lập</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -380,8 +389,8 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                         <p>Khu vực</p>
                                                         <div class="demand-product-content-item-option">
                                                             <select name="area" id="Area">
-                                                                <option value="area1">TPHCM</option>
-                                                                <option value="area2">Đồng Nai</option>
+                                                                <!-- <option value="area1">TPHCM</option> -->
+                                                                <!-- <option value="area2">Đồng Nai</option> -->
                                                             </select>
                                                         </div>
                                                     </div>

@@ -8,5 +8,5 @@ export const COLLECTION = {
   TAGS: 'tags',
   CUSTOMER_CONTACT: 'customer_contact',
   NOTIFICATION: 'notification',
-  ADMIN: 'admin'
+  ADMIN: 'admin',
 };

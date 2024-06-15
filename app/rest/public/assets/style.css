@@ -9,7 +9,7 @@
 body,
 html {
   font-size: 10px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 ul,
@@ -28,7 +28,7 @@ p {
   z-index: 10;
   position: sticky;
   background-image: linear-gradient(to left, rgba(27, 44, 126, 1), rgba(18, 21, 64, 1));
-  top: 0
+  top: 0;
 }
 
 .header-brand {
@@ -133,7 +133,7 @@ p {
   font-weight: bold;
 }
 
-.detail-content-card-body-items h1 .fa-play {
+.fa-play {
   color: #00cf03;
 }
 
@@ -671,7 +671,8 @@ footer .footer {
   margin: 2rem;
 }
 
-.product-card-body .card-title span, .products-detail-information-title span {
+.product-card-body .card-title span,
+.products-detail-information-title span {
   font-weight: bold;
   font-size: 1.7rem;
 }
@@ -680,11 +681,13 @@ footer .footer {
   margin: 1rem 0;
 }
 
-.product-card-body .card-decscription-content, .products-detail-information-content {
+.product-card-body .card-decscription-content,
+.products-detail-information-content {
   color: rgba(124, 127, 141, 1);
 }
 
-.product-card-body .card-decscription-value, .products-detail-information-value {
+.product-card-body .card-decscription-value,
+.products-detail-information-value {
   text-align: end;
   font-weight: bold;
   color: rgba(67, 69, 76, 1);
@@ -759,7 +762,8 @@ footer .footer {
   color: rgba(196, 196, 196, 1);
 }
 
-.products-detail-information-body, .products-detail-information-available-company {
+.products-detail-information-body,
+.products-detail-information-available-company {
   padding: 0.5rem 0;
 }
 
@@ -816,7 +820,6 @@ footer .footer {
 }
 /* tablet */
 @media only screen and (max-width: 1024px) {
-
   body,
   html {
     font-size: 9px;
@@ -869,7 +872,7 @@ footer .footer {
     background-color: #0000003b;
     color: #ffffff;
   }
-  
+
   #productShown {
     grid-template-columns: auto auto auto;
   }
@@ -881,7 +884,6 @@ footer .footer {
 
 /* mobile */
 @media only screen and (max-width: 450px) {
-
   body,
   html {
     font-size: 8px;

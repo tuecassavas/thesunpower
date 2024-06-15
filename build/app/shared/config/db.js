@@ -1,6 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
 exports.default = require('mongodb').MongoClient.connect(process.env.CONNECTION, {
-    maxPoolSize: 20,
-    useUnifiedTopology: true
+  maxPoolSize: 20,
+  useUnifiedTopology: true,
 });

@@ -7,7 +7,7 @@ export class S3Instance {
   constructor() {
     const credentials = fromIni({ profile: 'default' });
     this.instance = new S3Client({
-      credentials
+      credentials,
     });
   }
 
@@ -16,7 +16,7 @@ export class S3Instance {
       const params = {
         Bucket: process.env.AVATAR_S3_BUTKET ?? '',
         Key: `${username}/${filename}`,
-        Body: image
+        Body: image,
       };
       const command = new PutObjectCommand(params);
 

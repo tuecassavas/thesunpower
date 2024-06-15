@@ -1,5 +1,3 @@
-
-
 export type VERIFY = {
   id: string;
   updatedAt: Date;
@@ -9,4 +7,3 @@ export type VERIFY = {
   otp: string;
   type: 'VERIFY' | 'FORGOT';
 };
-

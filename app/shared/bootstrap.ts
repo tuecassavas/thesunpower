@@ -16,7 +16,7 @@ if (!process.env.NODE_ENV) {
 }
 
 dotenv.config({
-  path
+  path,
 });
 
 import { MongoClient } from 'mongodb';

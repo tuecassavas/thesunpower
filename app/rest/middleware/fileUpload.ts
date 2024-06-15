@@ -9,7 +9,7 @@ const storage = multer.memoryStorage();
 const upload = multer({
   storage: storage,
   limits: {
-    fileSize: 1024 * 1024 * 2
+    fileSize: 1024 * 1024 * 2,
   },
   fileFilter: (req, file, callback) => {
     if (file.mimetype == 'image/png' || file.mimetype == 'image/jpg' || file.mimetype == 'image/jpeg') {
@@ -17,7 +17,7 @@ const upload = multer({
     } else {
       return callback(new Error(ErrorVars.E026_INVALID_MIME_TYPE));
     }
-  }
+  },
 });
 
 const uploadSingleImage = upload.single('avatarImg');

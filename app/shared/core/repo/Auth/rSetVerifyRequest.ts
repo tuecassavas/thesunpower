@@ -1,7 +1,12 @@
 import { COLLECTION, DB } from 'shared/types/db';
 import { getCurrentUTC } from 'shared/helpers/dateHelper';
 
-export const rSetSendVerifyRequest = async (userName: string, otp: string, numberOfSendOTP: number, type: 'VERIFY' | 'FORGOT'): Promise<void> => {
+export const rSetSendVerifyRequest = async (
+  userName: string,
+  otp: string,
+  numberOfSendOTP: number,
+  type: 'VERIFY' | 'FORGOT'
+): Promise<void> => {
   const connector = await global.db;
   const instance = connector.db(DB);
   const collection = instance.collection(COLLECTION.VERIFY);
@@ -14,8 +19,8 @@ export const rSetSendVerifyRequest = async (userName: string, otp: string, numbe
         number_of_submit_OTP: 0,
         number_of_send_OTP: numberOfSendOTP,
         updated_at: getCurrentUTC(),
-        type
-      }
+        type,
+      },
     },
     { upsert: true }
   );

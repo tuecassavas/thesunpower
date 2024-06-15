@@ -2,8 +2,8 @@ let productData = [];
 const onloadDataProducts = async () => {
   try {
     let response = await axios({
-      url: "/assets/data/productData.json",
-      method: "GET",
+      url: '/assets/data/productData.json',
+      method: 'GET',
     });
     // console.log(response);
     productData = response.data.data;
@@ -17,9 +17,9 @@ const onloadDataProducts = async () => {
 
 const content = (data) => {
   // console.log(data);
-  let totalDivCard = "";
+  let totalDivCard = '';
   for (let i of data) {
-    let divCompany = "";
+    let divCompany = '';
     for (let company of i.companies) {
       divCompany =
         divCompany +
@@ -125,61 +125,55 @@ const content = (data) => {
   return totalDivCard;
 };
 
-let mediaScreen = window.matchMedia("(max-width: 450px)");
+let mediaScreen = window.matchMedia('(max-width: 450px)');
 
-mediaScreen.addEventListener("change", () => {
-  const element = document.getElementById("productShown");
+mediaScreen.addEventListener('change', () => {
+  const element = document.getElementById('productShown');
   if (mediaScreen.matches) {
-    ("");
+    ('');
   } else {
-    element.style.gridTemplateColumns = "";
+    element.style.gridTemplateColumns = '';
   }
 });
 
-let productDetailInformationClass = "";
+let productDetailInformationClass = '';
 const hoverProductCard = (id, event) => {
-  let clientWidth = document.getElementById("root").clientWidth;
+  let clientWidth = document.getElementById('root').clientWidth;
   let x = event.clientX;
   //   console.log(event.target);
-  const elementVisible = document.querySelector(
-    `#ProductDetailInfomation${id}`
-  );
+  const elementVisible = document.querySelector(`#ProductDetailInfomation${id}`);
   if (mediaScreen.matches) {
-    productDetailInformationClass = "products-detail-information-visible-mobile";
+    productDetailInformationClass = 'products-detail-information-visible-mobile';
   } else {
     if (x <= clientWidth / 2) {
-      productDetailInformationClass = "products-detail-information-visible-left";
+      productDetailInformationClass = 'products-detail-information-visible-left';
     } else {
-      productDetailInformationClass = "products-detail-information-visible-right";
+      productDetailInformationClass = 'products-detail-information-visible-right';
     }
-  };
-//   hoverProductDetailInformation(id)
+  }
+  //   hoverProductDetailInformation(id)
   return (elementVisible.className = productDetailInformationClass);
 };
 
 const hoverProductDetailInformation = (id) => {
-  const elementVisible = document.querySelector(
-    `#ProductDetailInfomation${id}`
-  );
+  const elementVisible = document.querySelector(`#ProductDetailInfomation${id}`);
   elementVisible.className = productDetailInformationClass;
 };
 
 const moveProductCard = (id) => {
-  const elementVisible = document.querySelector(
-    `#ProductDetailInfomation${id}`
-  );
-  elementVisible.className = "products-detail-information";
+  const elementVisible = document.querySelector(`#ProductDetailInfomation${id}`);
+  elementVisible.className = 'products-detail-information';
 };
 
 const showButtonExpandProduct = () => {
-  const element = document.getElementById("BtnExpandProduct");
+  const element = document.getElementById('BtnExpandProduct');
   if (productData.length <= 8) {
-    element.style.display = "none";
+    element.style.display = 'none';
   }
 };
 
 const loadProduct = (data) => {
-  document.querySelector("#productShown").innerHTML = content(data);
+  document.querySelector('#productShown').innerHTML = content(data);
 };
 
 window.onload = () => {

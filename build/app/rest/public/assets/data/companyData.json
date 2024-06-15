@@ -1,0 +1,724 @@
+[
+  {
+    "code": "AGI",
+    "name": "An Giang",
+    "companies": [
+      {
+        "name": "CÔNG TY TNHH ÁNH DƯƠNG LUXURY",
+        "description": "Ánh Dương Solar là thương hiệu chuyên cung cấp giải pháp điện năng lượng mặt trời, camera an ninh, máy nước nóng năng lượng mặt trời của công ty Ánh Dương Luxury",
+        "url": "https://solarbrano.vn/"
+      }
+    ]
+  },
+  {
+    "code": "VTB",
+    "name": "Bà Rịa - Vũng Tàu",
+    "companies": [
+      {
+        "name": "Công ty TNHH Thương Mại và Kỹ Thuật PowerTech",
+        "description": "Nhà phân phối các sản phẩm trong lĩnh vực năng lượng tái tạo, đặc biệt là điện năng lượng mặt trời",
+        "url": "https://powertech.vn/"
+      },
+      {
+        "name": "Công ty TNHH DV-KT HDT",
+        "description": "Nhà phân phối, thi công và lắp đặt hoàn thiện hệ thống điện mặt trời cho hộ gia đình và doanh nghiệp",
+        "url": "https://hdtsolar.vn/"
+      }
+    ]
+  },
+  {
+    "code": "BLI",
+    "name": "Bạc Liêu",
+    "companies": [
+      {
+        "name": "cty",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "BKA",
+    "name": "Bắc Kạn",
+    "companies": [
+      {
+        "name": "cty",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "BGI",
+    "name": "Bắc Giang",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "BNI",
+    "name": "Bắc Ninh",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "BTR",
+    "name": "Bến Tre",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "BDU",
+    "name": "Bình Dương",
+    "companies": [
+      {
+        "name": "CÔNG TY TNHH NĂNG LƯỢNG MẶT TRỜI ĐAN KHUÊ",
+        "description": "Nhà phân phối",
+        "url": "https://dankhuesolar.com/"
+      },
+      {
+        "name": "CÔNG TY TNHH ECO SOLAR",
+        "description": "ECO SOLAR cung cấp trọn gói dịch vụ từ tư vấn thiết kế, phân phối thiết bị và thi công, lắp đặt hệ thống điện năng lượng mặt trời cho các dự án điện mặt trời với đa dạng dãy công suất.",
+        "url": "https://ecosolar.vn/"
+      }
+    ]
+  },
+  {
+    "code": "BDI",
+    "name": "Bình Định",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": " company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "BPC",
+    "name": "Bình Phước",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": " company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "BTN",
+    "name": "Bình Định",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "CMU",
+    "name": "Cà Mau",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "CBA",
+    "name": "Cao Bằng",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "CTH",
+    "name": "Cần Thơ",
+    "companies": [
+      {
+        "name": "CÔNG TY TNHH ĐIỆN NĂNG LƯỢNG MẶT TRỜI CẦN THƠ",
+        "description": "Cung cấp thiết bị, thi công, bảo trì hệ thống điện năng lượng mặt trời",
+        "url": "https://diennangluongmattroicantho.com/"
+      }
+    ]
+  },
+  {
+    "code": "DNG",
+    "name": "Đà Nẵng",
+    "companies": [
+      {
+        "name": "CÔNG TY TNHH XD, TM & DV DHC SOLAR",
+        "description": "Chuyên cung cấp Hệ Thống Điện năng lượng Mặt Trời hòa lưới, hệ thống điện mặt trời Hybrid, hệ thống điện mặt trời độc lập dành cho dân dụng và công nghiệp",
+        "url": "https://www.dhcsolar.com/"
+      }
+    ]
+  },
+  {
+    "code": "DLA",
+    "name": "Đắk Lắk",
+    "companies": [
+      {
+        "name": "CÔNG TY CỔ PHẦN ĐIỆN NĂNG LƯỢNG SÔNG ĐÀ",
+        "description": "Chuyên tư vấn thiết kế, thi công và lắp đặt, đồng thời là nhà phân phối các tấm pin và các thiết bị liên quan để cung cấp và lắp đặt cho các dự án hệ thống điện năng lượng mặt trời có công suất từ nhỏ đến lớn",
+        "url": "https://solarsongda.com/"
+      }
+    ]
+  },
+  {
+    "code": "DKN",
+    "name": "Đắk Nông",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "DBI",
+    "name": "Điện Biên",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "DNA",
+    "name": "Đồng Nai",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "this is sell shit company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "DTP",
+    "name": "Đồng Tháp",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "this is sell shit company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "GLA",
+    "name": "Gia Lai",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "this is sell shit company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "HGI",
+    "name": "Hà Giang",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "this is sell shit company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "HNA",
+    "name": "Hà Nam",
+    "companies": [
+      {
+        "name": "CÔNG TY TNHH XNK ĐIỆN NĂNG LƯỢNG MẶT TRỜI HÀ NAM",
+        "description": "Thiết kế, thi công lắp đặt, phân phối thiết bị hệ thống điện năng lượng mặt trời",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "HNO",
+    "name": "Hà Nội",
+    "companies": [
+      {
+        "name": "CÔNG TY CP THƯƠNG MẠI VÀ KỸ THUẬT VTEK",
+        "description": "Cung cấp vật tư thiết bị, Tư vấn – Thiết kế – Sản xuất – Thương mại – Lắp đặt và Thi Công trong lĩnh vực Điện- Điện mặt trời",
+        "url": "https://www.vteksolar.com/"
+      }
+    ]
+  },
+  {
+    "code": "HTI",
+    "name": "Hà Tĩnh",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "HDU",
+    "name": "Hải Dương",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "HPG",
+    "name": "Hải Phòng",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "HAG",
+    "name": "Hậu Giang",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "HBI",
+    "name": "Hòa Bình ",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "HCM",
+    "name": " Hồ Chí Minh ",
+    "companies": [
+      {
+        "name": "Công ty TNHH Thương Mại và Kỹ Thuật PowerTech",
+        "description": "Nhà phân phối các sản phẩm trong lĩnh vực năng lượng tái tạo, đặc biệt là điện năng lượng mặt trời...",
+        "url": "https://powertech.vn/"
+      },
+      {
+        "name": "Công Ty CP Vũ Phong Energy Group",
+        "description": "EPC, O&M...",
+        "url": "https://vuphong.vn/"
+      },
+      {
+        "name": "Công ty TNHH Việt Nam Solar",
+        "description": "Nhà cung cấp, EPC...",
+        "url": "https://vietnamsolar.vn/"
+      },
+      {
+        "name": "Công ty TNHH TMDV XNK Gia Văn",
+        "description": "Nhà cung cấp, thi công lắt đặt hệ thống điện mặt trời dân dụng và công nghiệp",
+        "url": "https://givasolar.com/"
+      },
+      {
+        "name": "CÔNG TY TNHH SOLAR E",
+        "description": "Nhà phân phối, EPC, tư vấn thiết kế, thi công hệ thống điện mặt trời dân dụng và công nghiệp...",
+        "url": "https://solare.vn/"
+      },
+      {
+        "name": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ X Y DỰNG SAVICONS",
+        "description": "Nhà phân phối, tư vấn, lắp đặt hệ thống điện mặt trời và hệ thống bơm năng lượng mặt trời",
+        "url": "https://savisolar.com/"
+      },
+      {
+        "name": "Công Ty TNHH Xây Lắp Điện Công Nghiệp Năng Lượng BigBang",
+        "description": "Nhà cung cấp thiết bị",
+        "url": "https://bigbangsolar.vn/"
+      }
+    ]
+  },
+  {
+    "code": "HYE",
+    "name": "Hưng Yên ",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "KHA",
+    "name": "Khánh Hòa",
+    "companies": [
+      {
+        "name": "CÔNG TY TNHH CÔNG NGHỆ TH SUN",
+        "description": "Đơn vị lắp đặt",
+        "url": "https://solarkhanhhoa.com/"
+      }
+    ]
+  },
+  {
+    "code": "KGI",
+    "name": "Kiên Giang",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "KTU",
+    "name": "Kon Tum",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "LCA",
+    "name": "Lai Châu",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "LSN",
+    "name": "Lạng Sơn",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "LCI",
+    "name": "Lào Cai",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "LDG",
+    "name": "Lâm Đồng",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "LAN",
+    "name": "Long An",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "NDH",
+    "name": "Nam Định",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "NAN",
+    "name": "Nghệ An",
+    "companies": [
+      {
+        "name": "CÔNG TY TNHH CÔNG NGHỆ CAO SOLAR MIỀN TRUNG",
+        "description": "Nhà phân phối, EPC, O&M, PCM...",
+        "url": "https://solarsonglam.vn/"
+      }
+    ]
+  },
+  {
+    "code": "NTH",
+    "name": "Ninh Thuận",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "PTH",
+    "name": "Phú Thọ",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "PYE",
+    "name": "Phú Yên",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "QBI",
+    "name": "Quảng Bình",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "QNA",
+    "name": "Quảng Nam",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "QNG",
+    "name": "Quảng Ngãi",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "QNH",
+    "name": "Quảng Ninh",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "QTR",
+    "name": "Quảng Trị",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "STG",
+    "name": "Sóc Trăng",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "SLA",
+    "name": "Sơn La",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "TNI",
+    "name": "Tây Ninh",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "TBH",
+    "name": "Thái Bình",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "TNG",
+    "name": "Thái Nguyên",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "THA",
+    "name": "Thanh Hóa",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "TTH",
+    "name": "Thừa Thiên Huế",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "TGG",
+    "name": "Tiền Giang",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "TVH",
+    "name": "Trà Vinh",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "TQU",
+    "name": "Tuyên Quang",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "VLG",
+    "name": "Vĩnh Long",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "VPH",
+    "name": "Vĩnh Phúc",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  },
+  {
+    "code": "YBA",
+    "name": "Yên Bái",
+    "companies": [
+      {
+        "name": "cty abc",
+        "description": "company",
+        "url": "https:abc.com"
+      }
+    ]
+  }
+]

@@ -8,6 +8,6 @@ module.exports = {
   moduleNameMapper: {
     '^app/(.*)$': '<rootDir>/app/$1',
     '^shared/(.*)$': '<rootDir>/app/shared/$1',
-    '^rest/(.*)$': '<rootDir>/app/rest/$1'
-  }
+    '^rest/(.*)$': '<rootDir>/app/rest/$1',
+  },
 };
