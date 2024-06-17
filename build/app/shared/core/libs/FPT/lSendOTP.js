@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // import { doHttp } from '../../../helpers/httpClient';
 // import { utf8ToBase64 } from '../../../helpers';
 // import { BRAND_NAME, OTP_TEMPLATE } from '../../../const';

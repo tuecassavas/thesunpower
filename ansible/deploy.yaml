@@ -1,0 +1,39 @@
+---
+- name: Deploy Node.js application
+  hosts: all
+  become: no
+  vars:
+    target_dir: "/www/thegreenpower.vn"
+    local_build_dir: "../build/"
+  tasks:
+    - name: Ensure local build directory exists
+      local_action:
+        module: stat
+        path: "{{ local_build_dir }}"
+      register: build_dir
+
+    - name: Fail if local build directory does not exist
+      fail:
+        msg: "The build directory {{ local_build_dir }} does not exist on the local machine."
+      when: not build_dir.stat.exists
+
+    - name: Ensure target directory exists
+      file:
+        path: "{{ target_dir }}"
+        state: directory
+
+    - name: Copy build directory to target directory
+      synchronize:
+        src: "{{ local_build_dir }}"
+        dest: "{{ target_dir }}"
+        recursive: yes
+
+    - name: Install npm dependencies
+      npm:
+        path: "{{ target_dir }}"
+        production: yes
+
+    - name: Restart PM2 process
+      command: export NODE_ENV=production && pm2 restart --update-env  app/rest/index.js
+      args:
+        chdir: "{{ target_dir }}"
