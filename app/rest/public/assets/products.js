@@ -38,7 +38,7 @@ const content = (data) => {
         <div id="ProductDetailInfomation${i.id}" class="products-detail-information" onmouseover="hoverProductDetailInformation(${i.id})" onmouseout="moveProductCard(${i.id})">
                             <div class="products-detail-information-form">
                                 <div class="products-detail-information-title">
-                                    <span>${i.description}</span>
+                                    <span class="span">${i.description}</span>
                                 </div>
                                 <div class="products-detail-information-body">
                                 <div class="flex justify-between" style="gap:10px">
@@ -98,7 +98,7 @@ const content = (data) => {
         </div>
         <div class="product-card-body">
             <div class="card-title" onmouseover="hoverProductCard(${i.id}, event)" onmouseout="moveProductCard(${i.id})">
-                <span>${i.description}</span>
+                <span class="span">${i.description}</span>
             </div>
             <div class="card-decscription">
                 <div class="flex justify-between" style="gap:10px">

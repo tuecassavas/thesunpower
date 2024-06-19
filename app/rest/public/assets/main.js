@@ -18,19 +18,19 @@ const onloadCompaniesData = async () => {
 const loadContent = (data) => {
   let optionElement = '';
   for (let i of data) {
-    optionElement = optionElement + `<option value="${i.code}">${i.name}</option>`;
+    optionElement = optionElement + `<option class="select-item" value="${i.code}">${i.name}</option>`;
   }
   return (document.getElementById('Area').innerHTML = optionElement);
 };
 
 //header: active title
 const activeTitle = (pathname, pageId) => {
-  let element = document.querySelector(`#${pageId}`);
+  let element = document.querySelectorAll(`#${pageId}`);
   let path = window.location.pathname;
   if (path === pathname) {
-    element.style.color = 'rgba(111, 237, 142, 1)';
-  } else {
-    (''); // todo: ???
+    for (let i of element) {
+      i.style.color = 'rgba(111, 237, 142, 1)';
+    }
   }
 };
 

@@ -26,11 +26,11 @@
             <section class="carousel flex justify-end items-end">
                 <div class="carousel-content flex items-center">
                     <div class="carousel-content-detail">
-                        <span style="color: #fff;">Năng lượng mới</span>
-                        <span style="color: rgb(75, 255, 153);">Thế giới mới</span>
+                        <span class="carousel-content-title" style="color: #fff;">Năng lượng mới</span>
+                        <span class="carousel-content-title" style="color: rgb(75, 255, 153);">Thế giới mới</span>
                     </div>
                 </div>
-                <img src="/assets/img/image1.png" alt="năng lượng mặt trời, năng lượng xanh">
+                <img class="carousel-content-image" src="/assets/img/image1.png" alt="năng lượng mặt trời, năng lượng xanh">
             </section>
             <section class="detail">
                 <div class="detail-background-top">
@@ -58,10 +58,10 @@
                                         <span>(*) Công cụ bắt buộc nhập</span>
                                     </div>
                                     <div class="detail-content-card-body-items"  onclick="loadInput()">
-                                        <h2>
+                                        <h2 class="content-title">
                                             <i class="fa-solid fa-play"></i>
                                             Số tiền điện hoặc số kilo điện (*)
-                                        </h2>
+                                        </h2 class="content-title">
                                         <div class="content-line-height flex flex-col" id="formInputNumberElectric"
                                             onclick="loadInput()">
                                             <div>
@@ -72,8 +72,8 @@
                                                 </label>
                                                 <div id="InputElectricMoney" class="form-input">
                                                     <div class="form-input-custom" style="width: 96%;">
-                                                        <input type="text" placeholder="Nhập số tiền điện">
-                                                        <span>đ</span>
+                                                        <input class="input" type="text" placeholder="Nhập số tiền điện">
+                                                        <span class="input-sign">đ</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -84,18 +84,18 @@
                                                 </label>
                                                 <div id="InputElectricKilo" class="form-input hide">
                                                     <div class="form-input-custom" style="width: 96%;">
-                                                        <input type="text" placeholder="Nhập số kilo điện">
-                                                        <span>kW</span>
+                                                        <input class="input" type="text" placeholder="Nhập số kilo điện">
+                                                        <span class="input-sign">kW</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="detail-content-card-body-items">
-                                        <h2>
+                                        <h2 class="content-title">
                                             <i class="fa-solid fa-play"></i>
                                             Loại tiêu thụ điện (*)
-                                        </h2>
+                                        </h2 class="content-title">
                                         <div class="flex flex-col content-line-height">
                                             <label class="container">
                                                 <input type="radio" checked name="TypeOfUser">
@@ -119,10 +119,10 @@
                                         </div>
                                     </div>
                                     <div class="detail-content-card-body-items" >
-                                        <h2>
+                                        <h2 class="content-title">
                                             <i class="fa-solid fa-play"></i>
                                             Loại mạng điện (*)
-                                        </h2>
+                                        </h2 class="content-title">
                                         <div class="flex content-line-height" id="typeOfElectric"
                                             onclick="loadOption()">
                                             <div class="flex flex-col" style="width: 20%;">
@@ -155,12 +155,12 @@
                                                     <div class="hidden justify-center" id="optionThreePhasePower">
                                                         <div class="demand-product-content-item-option"
                                                             style="width: 80%;">
-                                                            <select name="optionThreePhasePower" id="Option">
-                                                                <option value="option1">380v</option>
-                                                                <option value="option2">Từ 110kV trở lên</option>
-                                                                <option value="option3">Từ 22kV đến dưới 110kV</option>
-                                                                <option value="option4">Từ 6kV đến dưới 22kV</option>
-                                                                <option value="option5">Dưới 6kV</option>
+                                                            <select class="select" name="optionThreePhasePower" id="Option">
+                                                                <option class="select-item" value="option1">380v</option>
+                                                                <option class="select-item" value="option2">Từ 110kV trở lên</option>
+                                                                <option class="select-item" value="option3">Từ 22kV đến dưới 110kV</option>
+                                                                <option class="select-item" value="option4">Từ 6kV đến dưới 22kV</option>
+                                                                <option class="select-item" value="option5">Dưới 6kV</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -174,12 +174,12 @@
                                                     <div class="hidden justify-center" id="optionThreePhasePowerProduction">
                                                         <div class="demand-product-content-item-option"
                                                             style="width: 80%;">
-                                                            <select name="optionThreePhasePower" id="Option">
-                                                                <option value="option1">380v</option>
-                                                                <option value="option2">Từ 110kV trở lên</option>
-                                                                <option value="option3">Từ 22kV đến dưới 110kV</option>
-                                                                <option value="option4">Từ 6kV đến dưới 22kV</option>
-                                                                <option value="option5">Dưới 6kV</option>
+                                                            <select class="select" name="optionThreePhasePower" id="Option">
+                                                                <option class="select-item" value="option1">380v</option>
+                                                                <option class="select-item" value="option2">Từ 110kV trở lên</option>
+                                                                <option class="select-item" value="option3">Từ 22kV đến dưới 110kV</option>
+                                                                <option class="select-item" value="option4">Từ 6kV đến dưới 22kV</option>
+                                                                <option class="select-item" value="option5">Dưới 6kV</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -192,10 +192,10 @@
                                         <div class="electric-usage-demand">
                                             <div class="electric-usage-demand-content">
                                                 <div class="flex justify-between">
-                                                    <h2>
+                                                    <h2 class="content-title">
                                                         <i class="fa-solid fa-play"></i>
                                                         Nhu cầu sử dụng điện
-                                                    </h2>
+                                                    </h2 class="content-title">
                                                     <div>
                                                         <button id="btnCollapseDemand" onclick="collapseDemand()">Rút
                                                             gọn</button>
@@ -209,8 +209,8 @@
                                                                 <span>Ban ngày</span>
                                                                 <div class="form-input">
                                                                     <div class="form-input-custom">
-                                                                        <input type="text" placeholder="Nhập %">
-                                                                        <span>%</span>
+                                                                        <input class="input" type="text" placeholder="Nhập %">
+                                                                        <span class="input-sign">%</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -226,8 +226,8 @@
                                                                 <span>Ban đêm</span>
                                                                 <div class="form-input">
                                                                     <div class="form-input-custom">
-                                                                        <input type="text" placeholder="Nhập %">
-                                                                        <span>%</span>
+                                                                        <input class="input" type="text" placeholder="Nhập %">
+                                                                        <span class="input-sign">%</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -237,8 +237,8 @@
                                                                 <span>Giờ cao điểm</span>
                                                                 <div class="form-input">
                                                                     <div class="form-input-custom">
-                                                                        <input type="text" placeholder="Nhập %">
-                                                                        <span>%</span>
+                                                                        <input class="input" type="text" placeholder="Nhập %">
+                                                                        <span class="input-sign">%</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -254,8 +254,8 @@
                                                                 <span>Giờ thấp điểm</span>
                                                                 <div class="form-input">
                                                                     <div class="form-input-custom">
-                                                                        <input type="text" placeholder="Nhập %">
-                                                                        <span>%</span>
+                                                                        <input class="input" type="text" placeholder="Nhập %">
+                                                                        <span class="input-sign">%</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -271,8 +271,8 @@
                                                                 <span>Giờ bình thường</span>
                                                                 <div class="form-input">
                                                                     <div class="form-input-custom">
-                                                                        <input type="text" placeholder="Nhập %">
-                                                                        <span>%</span>
+                                                                        <input class="input" type="text" placeholder="Nhập %">
+                                                                        <span class="input-sign">%</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -286,10 +286,10 @@
                                         <div class="electric-usage-habit">
                                             <div class="electric-usage-habit-content">
                                                 <div class="flex justify-between">
-                                                    <h2>
+                                                    <h2 class="content-title">
                                                         <i class="fa-solid fa-play"></i>
                                                         Thói quen sử dụng điện
-                                                    </h2>
+                                                    </h2 class="content-title">
                                                     <div>
                                                         <button id="btnCollapseHabit" onclick="collapseHabit()">Rút
                                                             gọn</button>
@@ -302,7 +302,7 @@
                                                             <span>Mô tả</span>
                                                             <div class="form-input">
                                                                 <div class="form-input-custom">
-                                                                    <textarea name="desc" id="Desc" cols="30" rows="5"
+                                                                    <textarea class="input-textarea" name="desc" id="Desc" cols="30" rows="5"
                                                                         placeholder="Nhập mô tả.                                        
 Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                                 </div>
@@ -325,44 +325,44 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                     </div>
                                     <hr class="detail-content-card-body-items">
                                     <div class="detail-content-card-body-items">
-                                        <h2 style="font-weight: bold">Hệ thống điện mặt trời đề xuất
-                                        </h2>
+                                        <h2 class="content-title" style="font-weight: bold">Hệ thống điện mặt trời đề xuất
+                                        </h2 class="content-title">
                                         <div style="margin: 2rem;"></div>
                                         <div class="result-table content-line-height">
-                                            <table>
+                                            <table class="table">
                                                 <tr>
-                                                    <th colspan="2">Hệ thống hòa lưới bán tải <span>200 kWh</span></th>
+                                                    <th class="table-head" colspan="2">Hệ thống hòa lưới bán tải <span>200 kWh</span></th>
                                                 </tr>
                                                 <tr>
-                                                    <td>Sản lượng ĐMT phát tối đa/1 tháng </td>
-                                                    <td><span>200 kWh</span></td>
+                                                    <td class="table-data">Sản lượng ĐMT phát tối đa/1 tháng </td>
+                                                    <td class="table-data"><span>200 kWh</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Số tiền tiết kiệm/1 tháng </td>
-                                                    <td><span>200.000 VND</span></td>
+                                                    <td class="table-data">Số tiền tiết kiệm/1 tháng </td>
+                                                    <td class="table-data"><span>200.000 VND</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Thời gian hòa vốn </td>
-                                                    <td><span>12 tháng</span></td>
+                                                    <td class="table-data">Thời gian hòa vốn </td>
+                                                    <td class="table-data"><span>12 tháng</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <th colspan="2">Hệ thống hòa lưới có lưu trữ <span>200 kWp</span> +
+                                                    <th class="table-head" colspan="2">Hệ thống hòa lưới có lưu trữ <span>200 kWp</span> +
                                                         lưu
                                                         trữ
                                                         <span>200 kW</span>
                                                     </th>
                                                 </tr>
                                                 <tr>
-                                                    <td>Sản lượng ĐMT phát tối đa/1 tháng </td>
-                                                    <td><span>200 kWh</span></td>
+                                                    <td class="table-data">Sản lượng ĐMT phát tối đa/1 tháng </td>
+                                                    <td class="table-data"><span>200 kWh</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Số tiền tiết kiệm/1 tháng </td>
-                                                    <td><span>200.000 VND</span></td>
+                                                    <td class="table-data">Số tiền tiết kiệm/1 tháng </td>
+                                                    <td class="table-data"><span>200.000 VND</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Thời gian hòa vốn </td>
-                                                    <td><span>12 tháng</span></td>
+                                                    <td class="table-data">Thời gian hòa vốn </td>
+                                                    <td class="table-data"><span>12 tháng</span></td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -378,28 +378,28 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                     <div class="demand-product-content-item">
                                                         <p>Loại hệ thống</p>
                                                         <div class="demand-product-content-item-option">
-                                                            <select name="typeSystem" id="TypeSystem">
-                                                                <option value="system1">Bán tải</option>
-                                                                <option value="system2">Hoà lưới bám tải + lưu trữ</option>
-                                                                <option value="system3">Độc lập</option>
+                                                            <select class="select" name="typeSystem" id="TypeSystem">
+                                                                <option class="select-item" value="system1">Bán tải</option>
+                                                                <option class="select-item" value="system2">Hoà lưới bám tải + lưu trữ</option>
+                                                                <option class="select-item" value="system3">Độc lập</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="demand-product-content-item">
                                                         <p>Khu vực</p>
                                                         <div class="demand-product-content-item-option">
-                                                            <select name="area" id="Area">
-                                                                <!-- <option value="area1">TPHCM</option> -->
-                                                                <!-- <option value="area2">Đồng Nai</option> -->
+                                                            <select class="select" name="area" id="Area">
+                                                                <!-- <option class="select-item" value="area1">TPHCM</option> -->
+                                                                <!-- <option class="select-item" value="area2">Đồng Nai</option> -->
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="demand-product-content-item">
                                                         <p>Khoảng giá</p>
                                                         <div class="demand-product-content-item-option">
-                                                            <select name="Price" id="Price">
-                                                                <option value="price1">20 triệu</option>
-                                                                <option value="price2">50 trệu</option>
+                                                            <select class="select" name="Price" id="Price">
+                                                                <option class="select-item" value="price1">20 triệu</option>
+                                                                <option class="select-item" value="price2">50 trệu</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -412,59 +412,59 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                     </div>
                                     <div class="detail-content-card-body-items">
                                         <div>
-                                            <h2 style="font-weight: bold">Công ty đề xuất</h2>
+                                            <h2 class="content-title" style="font-weight: bold">Công ty đề xuất</h2 class="content-title">
                                         </div>
                                         <div style="margin: 2rem;"></div>
                                         <div class="suggest-table">
-                                            <table>
+                                            <table class="table">
                                                 <tr>
-                                                    <th>TÊN CÔNG TY</th>
-                                                    <th>LOẠI HỆ THỐNG</th>
-                                                    <th>KHU VỰC</th>
-                                                    <th>THÀNH GIÁ</th>
-                                                    <th>WEBSITE</th>
+                                                    <th class="table-head">TÊN CÔNG TY</th>
+                                                    <th class="table-head">LOẠI HỆ THỐNG</th>
+                                                    <th class="table-head">KHU VỰC</th>
+                                                    <th class="table-head">THÀNH GIÁ</th>
+                                                    <th class="table-head">WEBSITE</th>
                                                 </tr>
                                                 <tr>
-                                                    <td>ABC công ty</td>
-                                                    <td>Bán tải</td>
-                                                    <td>TPHCM</td>
-                                                    <td>30.000.000 VNĐ</td>
-                                                    <td><a href="#">abc.com.vn</a></td>
+                                                    <td class="table-data">ABC công ty</td>
+                                                    <td class="table-data">Bán tải</td>
+                                                    <td class="table-data">TPHCM</td>
+                                                    <td class="table-data">30.000.000 VNĐ</td>
+                                                    <td class="table-data"><a class="link" href="#">abc.com.vn</a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ABC công ty</td>
-                                                    <td>Bán tải</td>
-                                                    <td>TPHCM</td>
-                                                    <td>30.000.000 VNĐ</td>
-                                                    <td><a href="#">abc.com.vn</a></td>
+                                                    <td class="table-data">ABC công ty</td>
+                                                    <td class="table-data">Bán tải</td>
+                                                    <td class="table-data">TPHCM</td>
+                                                    <td class="table-data">30.000.000 VNĐ</td>
+                                                    <td class="table-data"><a class="link" href="#">abc.com.vn</a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ABC công ty</td>
-                                                    <td>Bán tải</td>
-                                                    <td>TPHCM</td>
-                                                    <td>30.000.000 VNĐ</td>
-                                                    <td><a href="#">abc.com.vn</a></td>
+                                                    <td class="table-data">ABC công ty</td>
+                                                    <td class="table-data">Bán tải</td>
+                                                    <td class="table-data">TPHCM</td>
+                                                    <td class="table-data">30.000.000 VNĐ</td>
+                                                    <td class="table-data"><a class="link" href="#">abc.com.vn</a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ABC công ty</td>
-                                                    <td>Bán tải</td>
-                                                    <td>TPHCM</td>
-                                                    <td>30.000.000 VNĐ</td>
-                                                    <td><a href="#">abc.com.vn</a></td>
+                                                    <td class="table-data">ABC công ty</td>
+                                                    <td class="table-data">Bán tải</td>
+                                                    <td class="table-data">TPHCM</td>
+                                                    <td class="table-data">30.000.000 VNĐ</td>
+                                                    <td class="table-data"><a class="link" href="#">abc.com.vn</a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ABC công ty</td>
-                                                    <td>Bán tải</td>
-                                                    <td>TPHCM</td>
-                                                    <td>30.000.000 VNĐ</td>
-                                                    <td><a href="#">abc.com.vn</a></td>
+                                                    <td class="table-data">ABC công ty</td>
+                                                    <td class="table-data">Bán tải</td>
+                                                    <td class="table-data">TPHCM</td>
+                                                    <td class="table-data">30.000.000 VNĐ</td>
+                                                    <td class="table-data"><a class="link" href="#">abc.com.vn</a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ABC công ty</td>
-                                                    <td>Bán tải</td>
-                                                    <td>TPHCM</td>
-                                                    <td>30.000.000 VNĐ</td>
-                                                    <td><a href="#">abc.com.vn</a></td>
+                                                    <td class="table-data">ABC công ty</td>
+                                                    <td class="table-data">Bán tải</td>
+                                                    <td class="table-data">TPHCM</td>
+                                                    <td class="table-data">30.000.000 VNĐ</td>
+                                                    <td class="table-data"><a class="link" href="#">abc.com.vn</a></td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -485,14 +485,14 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                     </div>
                                     <div class="contact-card detail-content-card-body-items">
                                         <div class="contact-card-content">
-                                            <h2>Liên hệ với chúng tôi để nhận hỗ trợ</h2>
+                                            <h2 class="content-title">Liên hệ với chúng tôi để nhận hỗ trợ</h2 class="content-title">
                                             <div class="content-line-height">
                                                 <div class="flex justify-between">
                                                     <div class="contact-input">
                                                         <span class="contact-input-title">Họ và tên</span>
                                                         <div class="form-input">
                                                             <div class="form-input-custom">
-                                                                <input type="text" placeholder="Nhập Họ và tên">
+                                                                <input class="input" type="text" placeholder="Nhập Họ và tên">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -500,8 +500,8 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                         <span class="contact-input-title">Địa chỉ</span>
                                                         <div class="form-input">
                                                             <div class="form-input-custom">
-                                                                <input type="text" placeholder="Nhập Địa chỉ">
-                                                            </div>
+                                                                <input class="input" type="text" placeholder="Nhập Địa chỉ">
+                                                            </div> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -510,7 +510,7 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                         <span class="contact-input-title">Số điện thoại</span>
                                                         <div class="form-input">
                                                             <div class="form-input-custom">
-                                                                <input type="text" placeholder="Nhập Số điện thoại">
+                                                                <input class="input" type="text" placeholder="Nhập Số điện thoại">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -518,7 +518,7 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                         <span class="contact-input-title">Mô tả yêu cầu</span>
                                                         <div class="form-input">
                                                             <div class="form-input-custom">
-                                                                <input type="text" placeholder="Nhập mô tả yêu cầu">
+                                                                <input class="input" type="text" placeholder="Nhập mô tả yêu cầu">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -541,8 +541,8 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                 </div>
                                 <div class="detail-content-info-item-right w-1/2">
                                     <div class="flex flex-col">
-                                        <span style="color: #fff;">Năng lượng mới</span>
-                                        <span style="color: rgb(75, 255, 153);">Thế giới mới</span>
+                                        <span class="content-title" style="color: #fff;">Năng lượng mới</span>
+                                        <span class="content-title" style="color: rgb(75, 255, 153);">Thế giới mới</span>
                                     </div>
                                     <div style="margin: 2.5rem;"></div>
                                     <div class="flex justify-between">

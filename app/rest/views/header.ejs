@@ -5,9 +5,9 @@
                 <a class="font-bold" href="">thegreenpower</a>
             </div>
             <ul class="flex justify-between w-1/3 items-center">
-                <li><a id="HomePageActive" href="/">Trang chủ</a></li>
-                <li><a id="ProductPageActive" href="/products">Sản phẩm</a></li>
-                <li><a id="NewsPageActive" href="/news">Tin tức</a></li>
+                <li class="navbar-list"><a class="navbar-item" id="HomePageActive" href="/">Trang chủ</a></li>
+                <li class="navbar-list"><a class="navbar-item" id="ProductPageActive" href="/products">Sản phẩm</a></li>
+                <li class="navbar-list"><a class="navbar-item" id="NewsPageActive" href="/news">Tin tức</a></li>
             </ul>
         </div>
     </div>
@@ -21,9 +21,19 @@
             </button>
         </div>
         <ul id="navbar" class="hidden">
-            <li><a id="HomePageActive" href="/">Trang chủ</a></li>
-            <li><a id="ProductPageActive" href="/products">Sản phẩm</a></li>
-            <li><a id="NewsPageActive" href="/news">Tin tức</a></li>
+            <li class="navbar-list"><a class="navbar-item" id="HomePageActive" href="/">Trang chủ</a></li>
+            <li class="navbar-list"><a class="navbar-item" id="ProductPageActive" href="/products">Sản phẩm</a></li>
+            <li class="navbar-list"><a class="navbar-item" id="NewsPageActive" href="/news">Tin tức</a></li>
+            <li class="navbar-list">
+                <div class="search">
+                    <div class="form-input">
+                      <input class="input" type="text" placeholder="Nhập tìm kiếm" />
+                      <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+                  </div>
+            </li>
         </ul>
     </div>
 </header>
