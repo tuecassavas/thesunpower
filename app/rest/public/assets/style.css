@@ -325,6 +325,11 @@ p {
   font-weight: bold;
 }
 
+.suggest-table {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
 .suggest-table .table {
   width: 100%;
   box-shadow: 0 0 0.5rem 0rem #48474729;
@@ -335,7 +340,8 @@ p {
   border: 0.1rem solid #0a0a0a21;
   padding: 1rem;
   text-align: start;
-  width: 20%;
+  overflow-wrap: anywhere;
+  /* width: 20%; */
 }
 
 .suggest-table .table-head {

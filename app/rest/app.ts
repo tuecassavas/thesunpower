@@ -1,5 +1,5 @@
 import 'shared/bootstrap';
-import express from 'express';
+import express, { json } from 'express';
 
 import bodyParser from 'body-parser';
 
@@ -7,6 +7,8 @@ import { cors } from 'rest/config/cors';
 import { apiLimiter } from 'rest/config/rateLimit';
 
 import path from 'path';
+import companyData from './public/assets/data/companyData.json';
+import productData from './public/assets/data/productData.json'
 
 const app = express();
 app.set('trust proxy', 'loopback');
@@ -19,15 +21,16 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req: express.Request, res: express.Response) => {
-  res.render('index');
+  const data = companyData;
+  res.render('index', data);
 });
+
 app.get('/products', (req: express.Request, res: express.Response) => {
 
-  //todo get data here and provide to product page
-  // const data = json....
-  // res.render('products',data);
-  res.render('products');
+  const data = productData;
+  res.render('products', data);
 });
+
 app.get('/news', (req: express.Request, res: express.Response) => {
   res.render('news');
 });

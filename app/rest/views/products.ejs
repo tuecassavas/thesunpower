@@ -11,14 +11,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- axios  -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
-      integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
     <link href="/assets/style.css" rel="stylesheet" />
   </head>
 
@@ -41,7 +33,9 @@
                   <div class="products-content-item-option">
                     <select class="select" name="area" id="Area">
                       <option class="select-item" value="area1">TPHCM</option>
-                      <option class="select-item" value="area2">Đồng Nai</option>
+                      <option class="select-item" value="area2">
+                        Đồng Nai
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -49,11 +43,15 @@
                   <p class="content-title">Loại tiêu thụ điện</p>
                   <div class="products-content-item-option">
                     <select class="select" name="typeSystem" id="TypeSystem">
-                      <option class="select-item" value="system1">Bán tải</option>
+                      <option class="select-item" value="system1">
+                        Bán tải
+                      </option>
                       <option class="select-item" value="system2">
                         Hoà lưới bám tải + lưu trữ
                       </option>
-                      <option class="select-item" value="system3">Độc lập</option>
+                      <option class="select-item" value="system3">
+                        Độc lập
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -71,18 +69,25 @@
                   <div class="products-content-item-option">
                     <select class="select" name="Brand" id="Brand">
                       <option class="select-item" value="Brand1">Sony</option>
-                      <option class="select-item" value="Brand2">Toshiba</option>
+                      <option class="select-item" value="Brand2">
+                        Toshiba
+                      </option>
                     </select>
                   </div>
                 </div>
               </div>
               <div class="search">
-                <div class="form-input">
-                  <input class="input" type="text" placeholder="Nhập tìm kiếm" />
-                  <button>
+                <form class="form-input">
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Nhập tìm kiếm"
+                    id="searchInput"
+                  />
+                  <button type="submit" onclick="search(event)">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
-                </div>
+                </form>
               </div>
             </div>
             <div class="flex justify-start content-line-height">
@@ -95,10 +100,172 @@
             class="product-shown"
             id="productShown"
             style="max-width: 1366px"
-          ></div>
-          <div style="text-align: center; margin: 4rem">
-            <button id="BtnExpandProduct">Xem thêm</button>
+          >
+            <% data.forEach((item)=>{ %>
+            <div class="product-card">
+              <div
+                id="ProductDetailInfomation<%= item.id %>"
+                class="products-detail-information"
+                onmouseover="hoverProductDetailInformation('<%= item.id %>')"
+                onmouseout="moveProductCard('<%= item.id %>')"
+              >
+                <div class="products-detail-information-form">
+                  <div class="products-detail-information-title">
+                    <span class="span"><%= item.description %></span>
+                  </div>
+                  <div class="products-detail-information-body">
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Công suất đầu vào tối đa</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.maxInputCapacity %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Hiệu suất</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.performance %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Loại pin lưu trữ
+                      </span>
+                      <span class="products-detail-information-value"
+                        ><%= item.information.storageBattery %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Dải điện áp pin lưu trữ</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.voltage %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Dòng sạc tối đa</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.maxCharging %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Dòng xả tối đa</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.maxDisCharge %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Số ngõ MPPT</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.portMPPT %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Kích thước</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.size %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Cân nặng</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.weight %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >IP</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.ip %></span
+                      >
+                    </div>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        >Bảo hành</span
+                      >
+                      <span class="products-detail-information-value"
+                        ><%= item.information.warranty %></span
+                      >
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="products-detail-information-available-company">
+                    <% (item.companies).forEach((company)=>{ %>
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="products-detail-information-content"
+                        ><%= company.name %></span
+                      >
+                      <a href="<%= company.website %>" target="_blank"
+                        ><span class="products-detail-information-value"
+                          >Website</span
+                        ></a
+                      >
+                    </div>
+                    <% }) %>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-card-image">
+                  <img class="image-format" src="<%= item.image %>" alt="" />
+                </div>
+                <div class="product-card-body">
+                  <div
+                    class="card-title"
+                    onmouseover="hoverProductCard('<%= item.id %>', event)"
+                    onmouseout="moveProductCard('<%= item.id %>')"
+                  >
+                    <span class="span"><%= item.description %></span>
+                  </div>
+                  <div class="card-decscription">
+                    <div class="flex justify-between" style="gap: 10px">
+                      <span class="card-decscription-content"
+                        >Công suất đầu vào tối đa</span
+                      >
+                      <span class="card-decscription-value"
+                        ><%= item.information.maxInputCapacity %></span
+                      >
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="card-decscription-content">Hiệu suất</span>
+                      <span class="card-decscription-value"
+                        ><%= item.information.performance %></span
+                      >
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="card-product-price">
+                    <span class="card-product-price-content">Giá dao động</span>
+                    <span class="card-product-price-value"
+                      ><%= item.price %></span
+                    >
+                  </div>
+                  <div id="BtnProduct">
+                    <button>Tư vấn sản phẩm</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <% }) %>
           </div>
+          <!-- <div style="text-align: center; margin: 4rem">
+            <button id="BtnExpandProduct">Xem thêm</button>
+          </div> -->
         </div>
       </section>
       <%- include('footer'); -%>
