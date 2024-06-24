@@ -1,4 +1,6 @@
 let companiesData = [];
+
+// todo: dont use axios to get data like this
 const onloadCompaniesData = async () => {
   try {
     let response = await axios({
@@ -28,7 +30,7 @@ const activeTitle = (pathname, pageId) => {
   if (path === pathname) {
     element.style.color = 'rgba(111, 237, 142, 1)';
   } else {
-    ('');
+    (''); // todo: ???
   }
 };
 
@@ -45,7 +47,6 @@ const collapseNavbar = () => {
 
 window.onload = () => {
   activePage();
-  collapseNavbar();
   onloadCompaniesData();
 };
 
@@ -68,11 +69,21 @@ const loadOption = () => {
 const shownOption = (inputId, optionId) => {
   const checkedRadio = document.querySelector(`#${inputId}`).checked;
   const option = document.querySelector(`#${optionId}`);
+
+  // TODO: DO NOT USE == USE === INSTEAD
   if (checkedRadio == true) {
     return (option.style.display = 'flex');
   } else {
     return (option.style.display = 'none');
   }
+
+    // EXAMPLE:
+    // if (checkedRadio === true) {
+    //     return (option.style.display = 'flex');
+    // }
+    //
+    // return (option.style.display = 'none');
+
 };
 
 // collapse when click
