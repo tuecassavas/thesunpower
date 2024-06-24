@@ -372,6 +372,7 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                         <p>Loại hệ thống</p>
                                                         <div class="demand-product-content-item-option">
                                                             <select class="select" name="typeSystem" id="TypeSystem">
+                                                                <option class="select-item" value="systemDefault">---</option>
                                                                 <option class="select-item" value="system1">Bán tải</option>
                                                                 <option class="select-item" value="system2">Hoà lưới bám tải + lưu trữ</option>
                                                                 <option class="select-item" value="system3">Độc lập</option>
@@ -382,10 +383,10 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                         <p>Khu vực</p>
                                                         <div class="demand-product-content-item-option">
                                                             <select class="select" name="area" id="CompaniesArea">
+                                                                <option class="select-item" value="areaDefault">All</option>
                                                                 <% data.forEach((item)=>{ %>
                                                                 <option class="select-item" value="<%= item.code %>"><%= item.name %></option>
                                                                 <% }); %>
-                                                                <!-- <option class="select-item" value="area2">Đồng Nai</option> -->
                                                             </select>
                                                         </div>
                                                     </div>
@@ -393,6 +394,7 @@ Ví dụ (Sử dụng máy lạnh nhiều vào ban ngày ...)"></textarea>
                                                         <p>Khoảng giá</p>
                                                         <div class="demand-product-content-item-option">
                                                             <select class="select" name="Price" id="Price">
+                                                                <option class="select-item" value="priceDefault">---</option>
                                                                 <option class="select-item" value="price1">20 triệu</option>
                                                                 <option class="select-item" value="price2">50 trệu</option>
                                                             </select>

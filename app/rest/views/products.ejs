@@ -32,6 +32,7 @@
                   <p class="content-title">Vùng</p>
                   <div class="products-content-item-option">
                     <select class="select" name="area" id="Area">
+                      <option class="select-item" value="areaDefault">All</option>
                       <option class="select-item" value="area1">TPHCM</option>
                       <option class="select-item" value="area2">
                         Đồng Nai
@@ -43,6 +44,9 @@
                   <p class="content-title">Loại tiêu thụ điện</p>
                   <div class="products-content-item-option">
                     <select class="select" name="typeSystem" id="TypeSystem">
+                      <option class="select-item" value="system0">
+                        ---
+                      </option>
                       <option class="select-item" value="system1">
                         Bán tải
                       </option>
@@ -58,9 +62,10 @@
                 <div class="products-content-item">
                   <p class="content-title">Số kWh</p>
                   <div class="products-content-item-option">
-                    <select class="select" name="Price" id="Price">
-                      <option class="select-item" value="price1">1 kWh</option>
-                      <option class="select-item" value="price2">10 kWh</option>
+                    <select class="select" name="kWhNumber" id="kWhNumber">
+                      <option class="select-item" value="kWhNumber0">---</option>
+                      <option class="select-item" value="kWhNumber1">1 kWh</option>
+                      <option class="select-item" value="kWhNumber2">10 kWh</option>
                     </select>
                   </div>
                 </div>
@@ -68,6 +73,7 @@
                   <p class="content-title">Hãng</p>
                   <div class="products-content-item-option">
                     <select class="select" name="Brand" id="Brand">
+                      <option class="select-item" value="Brand0">---</option>
                       <option class="select-item" value="Brand1">Sony</option>
                       <option class="select-item" value="Brand2">
                         Toshiba
@@ -230,13 +236,12 @@
                     onmouseover="hoverProductCard('<%= item.id %>', event)"
                     onmouseout="moveProductCard('<%= item.id %>')"
                   >
-                    <span class="span"><%= item.description %></span>
+                    <div class="span"><%= item.description %></div>
                   </div>
                   <div class="card-decscription">
                     <div class="flex justify-between" style="gap: 10px">
                       <span class="card-decscription-content"
-                        >Công suất đầu vào tối đa</span
-                      >
+                        >Công suất đầu vào tối đa</span>
                       <span class="card-decscription-value"
                         ><%= item.information.maxInputCapacity %></span
                       >

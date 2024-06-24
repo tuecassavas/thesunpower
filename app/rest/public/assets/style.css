@@ -8,6 +8,7 @@
 
 body,
 html {
+  min-height: 100vh;
   font-size: 10px;
   font-family: "Inter", sans-serif;
 }
@@ -550,6 +551,7 @@ footer .footer {
 
 #products {
   font-size: 1.5rem;
+  min-height: 81.7vh;
 }
 
 .products {
@@ -915,6 +917,66 @@ footer .footer {
   #header .mobile-active #navbar .navbar-list .search .form-input .fa-magnifying-glass {
     background-color: transparent;
     color: #000;
+  }
+
+  .detail {
+    padding: 5rem;
+  }
+
+  .detail .detail-content {
+    width: 100%;
+  }
+
+  .detail .detail-content-container {
+    padding: 2rem;
+  }
+
+  .detail .detail-content .detail-content-card {
+    padding: 5rem;
+  }
+
+  .detail .detail-content-card-items {
+    width: 95%;
+  }
+
+  .detail .detail-content-card-title {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .detail .detail-content-card-body-items {
+    margin: 1rem;
+  }
+
+  .detail .suggest-table .table-head,
+  .table-data {
+    /* font-size: 1rem; */
+    padding: 0.5rem;
+  }
+
+  .detail .contact-card .contact-card-content {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .detail .contact-card .contact-card-content .flex {
+    flex-direction: column;
+  }
+
+  .detail .contact-card .contact-card-content .contact-input {
+    width: 100%;
+  }
+
+  .detail-content-info-item {
+    flex-direction: column;
+  }
+
+  .detail-content-info-item .detail-content-info-item-right {
+    width: 100%;
+  }
+
+  .detail-content-info-item .detail-content-info-item-right .content-title {
+    font-size: 3rem;
   }
 
   #productShown {
